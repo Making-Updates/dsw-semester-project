@@ -2,7 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 /* GET login page. */
-router.get('/', function (req, res, next) {
+//label form action "logout"
+router.get('/logout', function (req, res) {
+    req.session.destroy();
     res.send('logout');
 });
 

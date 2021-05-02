@@ -31,9 +31,10 @@ db.query(sql, [inputData.email], function(err, data, field) {
             if  (err) throw err;
                     });
     var msg = "You have successfully registered";
+    //res.redirect('../views/index');
     }
     // redirect the user to the homepage after registering
-    res.render('../views/index');
+    res.redirect('../views/index', {alertMsg:msg});
 })
 })
 

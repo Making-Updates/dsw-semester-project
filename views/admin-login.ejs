@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href= "../styles/registration.css"/>
+    <link rel= "stylesheet" href= "../styles/login.css"/>
     <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootsrap.min.css">
-    <title>Register Page</title>
+    <title>Admin Login Page</title>
 </head>
 <body>
     <div class = "container">
         <div class = "card">
-            <div class = "img_container"><img src = "./img/login avi.png" alt = ""/>
+            <div class = "img_container"><img src = "../img/login avi.png" alt = ""/>
         </div>
-        <form method="post" action= "/registration">
+        <form method="post" action= "/admin-login">
             <input placeholder = "username/email" type = "text">
             <input placeholder="password" type="password"> 
-            <input placeholder="confirm password" type="confirm password">
-            <input class = "register_button" type = "submit" value = "Register">
+            <input class = "login_button" type = "submit" value = "Login">    
         </form>
-    </div>
-    
+    </div>  
 </body>
 </html>

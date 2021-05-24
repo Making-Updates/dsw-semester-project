@@ -22,6 +22,7 @@ login.ejs
 register.ejs
 app.js
 database.js
+map.ejs
 
 # Files still need work
 
@@ -33,5 +34,4 @@ error.ejs
 forgot.ejs
 index.ejs
 info.ejs
-map.ejs
 reset.ejs

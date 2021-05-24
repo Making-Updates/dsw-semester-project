@@ -9,7 +9,7 @@ router.get('/', async function (req, res, next) {
     db.query(sqlPerson + ';' + sqlShelter, function (err, results) {
         if (err) throw err;
         //if (req.session.loggedinUser != true) res.redirect('/login');
-        res.render('map', { people: results[0], shelter: results[1], emailAddress: req.session.emailAdress })
+        res.render('map', { people: results[0], shelter: results[1], emailAddress: req.session.emailAddress })
     });
 });
 

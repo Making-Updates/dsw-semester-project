@@ -16,16 +16,16 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res) {
-    var emailAdress = req.body.email;
+    var emailAddress = req.body.email;
     var password = req.body.password;
 
     //check if the user input match the values in the database
     var sql = 'SELECT * FROM logins WHERE email =? AND password =?';
-    db.query(sql, [emailAdress, password], function (err, data, fields) {
+    db.query(sql, [emailAddress, password], function (err, data, fields) {
         if (err) throw err
         if (data.length > 0) {
             req.session.loggedinUser = true;
-            req.session.emailAdress = emailAdress;
+            req.session.emailAddress = emailAddress;
             res.redirect('/')
         } else {
             res.render('login', { alertMsg: "Invalid login detail" })

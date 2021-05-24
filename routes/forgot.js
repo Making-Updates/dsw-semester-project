@@ -19,10 +19,10 @@ router.get('/', function (req, res, next) {
 });
 router.post('/', function (req, res) {
     //initiate the user email
-    var emailAdress = req.body.email;
+    var emailAddress = req.body.email;
     //check if it exists in the DB
     var sql = 'SELECT * FROM logins WHERE email =?';
-    db.query(sql, [emailAdress], function (err, data, fields) {
+    db.query(sql, [emailAddress], function (err, data, fields) {
         if (err) throw err
         if (data.length > 0) {
             //redirect the user to the new password input field in the route reset password

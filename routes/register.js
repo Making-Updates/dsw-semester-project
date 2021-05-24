@@ -21,7 +21,7 @@ router.post('/', function (req, res, next) {
     db.query(sql, [inputData.email], function (err, data, field) {
         if (err) throw err
         if (data.length > 1) {
-            var msg = inputData.email + "already exist";
+            var msg = inputData.email + " already exist";
             res.render('register', { alertMsg: msg });
         } else if (inputData.confirm_password != inputData.password) {
             var msg = "Password and confirm password do not match";

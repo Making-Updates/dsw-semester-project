@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET donate page. */
 router.get('/', function (req, res, next) {
-    res.render('donate');
+    //if (req.session.loggedinUser != true) res.redirect('/login');
+    res.render('donate', { emailAddress: req.session.emailAddress });
 });
 
 module.exports = router;

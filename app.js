@@ -16,6 +16,8 @@ var donateRouter = require('./routes/donate');
 var infoRouter = require('./routes/info');
 var adminRouter = require('./routes/admin');
 var logoutRouter = require('./routes/logout');
+var adminLoginRouter = require('./routes/admin-login');
+var resetRouter = require('./routes/reset');
 
 var app = express();
 
@@ -45,6 +47,8 @@ app.use('/donate', donateRouter);
 app.use('/info', infoRouter);
 app.use('/admin', adminRouter);
 app.use('/logout', logoutRouter);
+app.use('/admin-login', adminLoginRouter);
+app.use('/reset', resetRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

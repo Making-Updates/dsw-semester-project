@@ -15,22 +15,22 @@ var db = require('../database');
 
 /* GET forgot password page. */
 router.get('/', function (req, res, next) {
-    res.render('forgot');
+    res.render('forgot', { alertMsg: "" });
 });
-router.post('/forgot', function(req, res) {
+router.post('/', function (req, res) {
     //initiate the user email
-    var emailAdress = req.body.email;
+    var emailAddress = req.body.email;
     //check if it exists in the DB
     var sql = 'SELECT * FROM logins WHERE email =?';
-    db.query(sql, [emailAdress], function (err, data, fields) {
-        if(err) throw err 
-        if(data.length > 0){
+    db.query(sql, [emailAddress], function (err, data, fields) {
+        if (err) throw err
+        if (data.length > 0) {
             //redirect the user to the new password input field in the route reset password
             res.redirect('/reset')
-        }else{
-            res.render('../views/forgot',{alertMsg:"Invalid email"})
+        } else {
+            res.render('forgot', { alertMsg: "Invalid email" })
         }
-    })  
+    })
 })
 
 module.exports = router;

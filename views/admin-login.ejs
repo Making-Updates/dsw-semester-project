@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href= "../styles/login.css"/>
-    <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootsrap.min.css">
     <title>Admin Login Page</title>
+    <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+        <link rel="stylesheet" href="/stylesheets/login.css" />
 </head>
 <body>
-    <div class = "container">
-        <div class = "card">
-            <div class = "img_container"><img src = "../img/login avi.png" alt = ""/>
+    <div class="container">
+        <div class="card">
+            <% if (alertMsg != '') { %>   <p class="alert-error"><%= alertMsg %></p> <% } %>
+            <h3>Admin Login</h3>
+            <div class="img_container"><img src="/images/login-avi.png" alt="Login AVI"/>
         </div>
         <form method="post" action= "/admin-login">
-            <input placeholder = "username/email" type = "text">
-            <input placeholder="password" type="password"> 
-            <input class = "login_button" type = "submit" value = "Login">    
+            <input placeholder="Email Address" type="text" name="email">
+            <input placeholder="Password" type="password" name="password"> 
+            <input class="login_button" type="submit" value="Login">    
         </form>
-    </div>  
+    </div>
 </body>
 </html>

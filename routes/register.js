@@ -23,7 +23,7 @@ router.post('/', function (req, res, next) {
         if (data.length > 1) {
             var msg = inputData.email + "already exist";
             res.render('register', { alertMsg: msg });
-        } else if (input.Data.confirm_password != inputData.password) {
+        } else if (inputData.confirm_password != inputData.password) {
             var msg = "Password and confirm password do not match";
             res.render('register', { alertMsg: msg });
         } else {
@@ -33,7 +33,7 @@ router.post('/', function (req, res, next) {
                 if (err) throw err;
             });
             var msg = "You have successfully registered";
-            res.redirect('/login', { alertMsg: msg });
+            res.redirect('/login?msg=' + msg);
         }
     })
 })

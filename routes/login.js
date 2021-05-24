@@ -5,7 +5,14 @@ var db = require('../database');
 /* GET login page. */
 //assign action the value of login in the login.ejs file
 router.get('/', function (req, res, next) {
-    res.render('login', { alertMsg: "" });
+    var msg = req.query.msg;
+    if (msg) {
+        res.render('login', { alertMsg: msg });
+    }
+    else {
+        res.render('login', { alertMsg: "" });
+    }
+
 });
 
 router.post('/', function (req, res) {
@@ -19,7 +26,7 @@ router.post('/', function (req, res) {
         if (data.length > 0) {
             req.session.loggedinUser = true;
             req.session.emailAdress = emailAdress;
-            res.redirect('/index')
+            res.redirect('/')
         } else {
             res.render('login', { alertMsg: "Invalid login detail" })
         }

@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET admin page. */
 router.get('/', function (req, res, next) {
-    //if (req.session.loggedinUser != true $$ req.session.admin != true) res.redirect('/admin-login');
+    //if (req.session.loggedinUser != true && req.session.admin != true) res.redirect('/admin-login');
     res.render('admin', { emailAddress: req.session.emailAdress });
 });
 

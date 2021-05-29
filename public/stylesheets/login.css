@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: #edf2f4;
 }
 
 .container {
@@ -46,7 +46,8 @@ p {
 	text-align: center;
 }
 
-.login_button {
+.login_button,
+.reset_button {
 	background-color: blue;
 	color: white;
 }

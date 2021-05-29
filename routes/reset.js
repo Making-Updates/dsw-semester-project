@@ -5,7 +5,13 @@ var db = require('../database');
 /* GET reset password page. */
 //label form action "reset_page"
 router.get('/', function (req, res) {
-    res.render('reset', { alertMsg: "" });
+    var msg = req.query.msg;
+    if (msg) {
+        res.render('reset', { alertMsg: msg });
+    }
+    else {
+        res.render('reset', { alertMsg: "" });
+    }
 });
 
 router.post('/', function (req, res) {
@@ -13,12 +19,13 @@ router.post('/', function (req, res) {
         res.render('reset', { alertMsg: "Passwords do not match. Please try again." });
     } else {
         // store user information into the database
-        var sql = 'UPDATE logins SET password = ? where email= req.body.email';
-        db.query(sql, req.body.password, function (err, data) {
+        var sql = 'UPDATE user_login SET password = ?, confirm_password = ? where email=?';
+        db.query(sql, [req.body.password, req.body.confirm_password, req.session.forgotEmail], function (err, data) {
             if (err) throw err;
+            req.session.forgotEmail = '';
         });
         var msg = "You have successfully changed your password, please login";
-        res.redirect('/login', { alertMsg: msg });
+        res.redirect('/login?msg=' + msg);
     }
 })
 

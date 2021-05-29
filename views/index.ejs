@@ -1,11 +1,243 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Index</title>
-		<link rel="stylesheet" href="/stylesheets/style.css" />
-	</head>
-	<body>
-		<h1>Index Page</h1>
-		<p><%= emailAddress %></p>
-	</body>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Index Page</title>
+	<link rel="icon" type="image/png" href="/images/logo.png" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/stylesheets/index.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<img src="/images/logo.png" style="
+						height: 50px;
+						width: 50px;
+						border-radius: 50px;
+						margin-right: 10px;
+					" />
+			<a class="navbar-brand" href="/">Shelter Mission</a>
+
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/donate">Donate</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/info">Information</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/map">Map</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<%= emailAddress %>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+							<a class="dropdown-item" href="/logout">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img class="img-fluid rounded mb-4" src="/images/home.jpg" alt="..." />
+				</div>
+				<div class="col-lg-6">
+					<h2>About Shelter Mission</h2>
+					<p>
+						We are looking to provide ordinary people with the tools necessary to help better their
+						community. Shelter Mission has a map page where people are able to submit locations of Homeless
+						Shelters and Homeless People and this data will be displayed on an interactive map.
+					</p>
+					<p>
+						We believe everyone has the responsibility to do whatever they can to help their community. By
+						using Shelter Mission everyone will have access to a central website mapping out the locations
+						of Homeless People.
+					</p>
+					<p>
+						Knowing where Homeless People are is the first step to helping them and we hope this website
+						will be a stepping stone to helping people live better lives.
+					</p>
+					</d iv>
+				</div>
+			</div>
+	</section>
+	<hr class="my-0" />
+	<!-- Team Members Section-->
+	<section class="py-5 bg-light">
+		<div class="container">
+			<h2 class="mb-4">Our Team</h2>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<div class="card-body text-center">
+							<h4 class="card-title">Tiiso Senosha</h4>
+							<h6 class="card-subtitle mb-2 text-muted">
+								220003917
+							</h6>
+							<p class="card-text">
+								Backend: Admin Login, Forgot Password, Login
+								and Register
+								<hr />
+								Frontend: Index View
+								<hr />
+								Documentation
+							</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="#!">theotiiso@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<div class="card-body text-center">
+							<h4 class="card-title">Lesego Temane</h4>
+							<h6 class="card-subtitle mb-2 text-muted">
+								219081209
+							</h6>
+							<p class="card-text">
+								Backend: Database Creation
+								<hr />
+								Frontend: Index View
+								<hr />
+								Documentation
+							</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="#!">lesegogtemane@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<div class="card-body text-center">
+							<h4 class="card-title">Waaiez Kinnear</h4>
+							<h6 class="card-subtitle mb-2 text-muted">
+								219021671
+							</h6>
+							<p class="card-text">
+								Backend: Map Login and Admin Logic
+								<hr />
+								Frontend: Index, Map and Admin Views
+								<hr />
+								Documentation
+							</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="#!">waaiez.kinnear10@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<div class="card-body text-center">
+							<h4 class="card-title">Alexis Makgeru</h4>
+							<h6 class="card-subtitle mb-2 text-muted">
+								220042401
+							</h6>
+							<p class="card-text">
+								Backend: Database Creation
+								<hr />
+								Frontend: Index View
+								<hr />
+								Documentation
+							</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="#!">sebotsealexis@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<div class="card-body text-center">
+							<h4 class="card-title">Bonginkosi Nhantumbo</h4>
+							<h6 class="card-subtitle mb-2 text-muted">
+								217040604
+							</h6>
+							<p class="card-text">
+								Frontend: Index, Error, Forgot Password,
+								Login and Register Views
+								<hr />
+								Documentation
+							</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="#!">bonginkosi.li73@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<div class="card-body text-center">
+							<h4 class="card-title">Blessing Leso</h4>
+							<h6 class="card-subtitle mb-2 text-muted">
+								219089394
+							</h6>
+							<p class="card-text">
+								Frontend: Index, Donate and Information Views
+								<hr />
+								Documentation
+							</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="#!">blessingitlotlengleso@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="my-0" />
+	<!-- Features Section-->
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2 class="mb-4">Technologies we used</h2>
+					<ul>
+						<li>Our backend is built on NodeJS</li>
+						<li>We use Express to define our routes</li>
+						<li>Our frontend is built using EJS to allow us to dynamically create pages</li>
+						<li>We use MySQL as our database implementation</li>
+					</ul>
+					<div class="col-md-8">
+						<a class="btn btn-lg btn-secondary btn-block" href="#!">View Documentation</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<img class="img-fluid rounded" src="/images/home2.jpg" alt="..." />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="py-5">
+		<div class="container">
+			<p class="m-0 text-center text-white">
+				Copyright &copy; Shelter Mission 2021
+			</p>
+		</div>
+	</footer>
+</body>
+
 </html>

@@ -13,7 +13,7 @@ router.post('/', function (req, res) {
     var password = req.body.password;
 
     //check if the user input match the values in the database
-    var sql = 'SELECT * FROM admin WHERE email =? AND password =?';
+    var sql = 'SELECT * FROM admin_login WHERE email =? AND password =?';
     db.query(sql, [emailAddress, password], function (err, data, fields) {
         if (err) throw err
         if (data.length > 0) {

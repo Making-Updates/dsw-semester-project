@@ -18,7 +18,36 @@ Bonginkosi Nhantumbo - 217040604 - bonginkosi.li73@gmail.com
 
 Blessing Leso - 219089394 - blessingitlotlengleso@gmail.com
 
-# Tools used to build your website
+# How to install
+
+First you need NodeJS and MySQL installed.
+
+Once installed and working you can clone this repo with the following command
+`git clone https://github.com/Making-Updates/dsw-semester-project.git`
+
+After the repo has been cloned you need to open a terminal window (Powershell) inside the folder and run the following command
+`npm install`
+
+This will install all the required dependencies.
+
+After the dependencies are installed you need to create the database that is going to be used.
+All the commands used can be found in `create_database.sql`
+
+After the database and all its tables have been created you are ready to start using the website.
+
+Run the following command to start the website
+`npm start`
+
+Look in your terminal output and you will see the line
+`Listening on Port XXXX`
+Where `XXXX` is a number.
+
+Once you have the Port number you can navigate to
+`localhost:XXXX/`
+
+# Documentation
+
+## Tools used to build your website
 
 The following tools were used to build our website:
 `NodeJS, Express, EJS, MySQL, Bootstrap`
@@ -31,7 +60,7 @@ The template can be found here: https://github.com/StartBootstrap/startbootstrap
 
 However at the time of submission, the template has been updated to use Bootstrap 5 and the design has changed considerably.
 
-# Explanation of how these tools are integrated
+## Explanation of how these tools are integrated
 
 Our backend is built on NodeJS
 
@@ -43,7 +72,7 @@ We use MySQL as our database implementation
 
 We use Bootstrap to make our website responsive as well as to cut down on the amount of CSS that needs to be written.
 
-# Narratives
+## Narratives
 
 We are looking to provide ordinary people with the tools necessary to help better their
 community.
@@ -57,19 +86,19 @@ of Homeless People.
 Knowing where Homeless People are is the first step to helping them and we hope this website
 will be a stepping stone to helping people live better lives.
 
-# Explanation of our Database and UML Diagram
+## Explanation of our Database and UML Diagram
 
 Fill in
 
-# Screen dumps of the website
+## Screen dumps of the website
 
 Fill in
 
-# Mockups
+## Mockups
 
 Fill in
 
-# Screen Flows
+## Screen Flows
 
 Our website requires users to log in before they can use the site. They will be redirected to the Login Page if they are not logged in.
 
@@ -93,7 +122,7 @@ There is also an Admin Page which is not available to users. If a user tries to 
 
 On the Admin Login Page an Admin will be able to log into the Admin only page where they will be able to Delete data from the database.
 
-# Use Cases
+## Use Cases
 
 -   Who is using the website
     -   People looking to report locations of homeless people
@@ -107,7 +136,7 @@ On the Admin Login Page an Admin will be able to log into the Admin only page wh
 -   How the website should respond to an action
     -   Information submitted must be added to the map
 
-# Website Requirements
+## Website Requirements
 
 -   [x] Home Page with application name, group members, links to design documents
 -   [x] Use a relation database
@@ -120,18 +149,18 @@ On the Admin Login Page an Admin will be able to log into the Admin only page wh
 -   [x] Map needs to show homeless shelters (Retrieve)
 -   [x] Map needs to show locations of homeless people (Retrieve)
 
-# Problem Statement
+## Problem Statement
 
 Homelessness is a serious problem in South Africa and keeping track of where Homeless People are gets tricky because they are able to continuously move around.
 
-# Problem Objective
+## Problem Objective
 
 The objective of our project is to create a centralised website where Homeless People can be tracked.
 
-# Proposed Solution
+## Proposed Solution
 
 A website will be developed where users can log in and submit data regarding the whereabouts of Homeless People and Homeless Shelters.
 
-# Solution Design
+## Solution Design
 
 Fill in

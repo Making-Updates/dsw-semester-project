@@ -109,16 +109,16 @@ On the Admin Login Page an Admin will be able to log into the Admin only page wh
 
 # Website Requirements
 
-[x] Home Page with application name, group members, links to design documents
-[x] Use a relation database
-[x] The website needs to be able to perform CRUD operations
-[x] Users should be able to register/login (Create)
-[x] Users need to be able to submit data (Create)
-[x] Admins need to be able to deleted submitted data (Delete)
-[x] Admins need to be able to delete user account (Delete)
-[x] Users need to be able to reset forgotten password (Update)
-[x] Map needs to show homeless shelters (Retrieve)
-[x] Map needs to show locations of homeless people (Retrieve)
+-   [x] Home Page with application name, group members, links to design documents
+-   [x] Use a relation database
+-   [x] The website needs to be able to perform CRUD operations
+-   [x] Users should be able to register/login (Create)
+-   [x] Users need to be able to submit data (Create)
+-   [x] Admins need to be able to deleted submitted data (Delete)
+-   [x] Admins need to be able to delete user account (Delete)
+-   [x] Users need to be able to reset forgotten password (Update)
+-   [x] Map needs to show homeless shelters (Retrieve)
+-   [x] Map needs to show locations of homeless people (Retrieve)
 
 # Problem Statement
 
@@ -131,3 +131,7 @@ The objective of our project is to create a centralised website where Homeless P
 # Proposed Solution
 
 A website will be developed where users can log in and submit data regarding the whereabouts of Homeless People and Homeless Shelters.
+
+# Solution Design
+
+Fill in

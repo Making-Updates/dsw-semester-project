@@ -17,7 +17,7 @@ router.post('/', function (req, res, next) {
         confirm_password: req.body.confirm_password
     }
     // check if the email address is different from the others
-    var sql = 'SELECT * FROM logins WHERE email =?';
+    var sql = 'SELECT * FROM user_login WHERE email =?';
     db.query(sql, [inputData.email], function (err, data, field) {
         if (err) throw err
         if (data.length > 1) {
@@ -28,7 +28,7 @@ router.post('/', function (req, res, next) {
             res.render('register', { alertMsg: msg });
         } else {
             // store user information into the database
-            var sql = 'INSERT INTO logins SET ?';
+            var sql = 'INSERT INTO user_login SET ?';
             db.query(sql, inputData, function (err, data) {
                 if (err) throw err;
             });

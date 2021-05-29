@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
-        <link rel="stylesheet" href="public/stylesheets/resetpassword.css" />
+    <title>Reset Page</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/login.css" />
 </head>
+
 <body>
     <div class="container">
         <div class="card">
-            <h3 class="text-center">Reset Password</h3>
-            <form method="post" action= "/ResetPassword">
-                <input placeholder="Enter new Password" type="text" name="password">
-                <input placeholder="Confirm new Password" type="text" name="password"> 
-                <input class="Reset_button" type="submit" value="Reset my password">    
-            </form>
-        </div> 
+            <% if (alertMsg !='' ) { %>
+                <p class="alert-error">
+                    <%= alertMsg %>
+                </p>
+                <% } %>
+                    <h3>Reset Password</h3>
+                    <form method="post" action="/reset">
+                        <input placeholder="Enter new Password" type="password" name="password">
+                        <input placeholder="Confirm new Password" type="password" name="confirm_password">
+                        <input class="reset_button" type="submit" value="Reset my password">
+                    </form>
+        </div>
     </div>
 </body>
+
 </html

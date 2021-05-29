@@ -3,12 +3,12 @@ let router = express.Router();
 let db = require('../database');
 
 router.get('/', async function (req, res, next) {
-    let sqlPerson = 'SELECT * FROM persons';
-    let sqlShelter = 'SELECT * FROM shelters';
+    let sqlPerson = 'SELECT * FROM homeless_people';
+    let sqlShelter = 'SELECT * FROM homeless_shelter';
 
     db.query(sqlPerson + ';' + sqlShelter, function (err, results) {
         if (err) throw err;
-        //if (req.session.loggedinUser != true) res.redirect('/login');
+        if (req.session.loggedinUser != true) res.redirect('/login');
         res.render('map', { people: results[0], shelter: results[1], emailAddress: req.session.emailAddress })
     });
 });
@@ -20,10 +20,10 @@ router.post('/', function (req, res) {
         let inputData = {
             longitude: splitLatLng[1],
             latitude: splitLatLng[0],
-            peopleCount: req.body.peopleCountHP,
+            count: req.body.peopleCountHP,
         }
 
-        let sql = 'INSERT INTO persons SET ?';
+        let sql = 'INSERT INTO homeless_people SET ?';
         db.query(sql, inputData, function (err, data) {
             if (err) throw err;
         });
@@ -33,10 +33,10 @@ router.post('/', function (req, res) {
         let inputData = {
             longitude: splitLatLng[1],
             latitude: splitLatLng[0],
-            shelterName: req.body.shelterNameHS,
+            name: req.body.shelterNameHS,
         }
 
-        let sql = 'INSERT INTO shelters SET ?';
+        let sql = 'INSERT INTO homeless_shelter SET ?';
         db.query(sql, inputData, function (err, data) {
             if (err) throw err;
         });

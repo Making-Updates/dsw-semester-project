@@ -29,12 +29,13 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({
-  secret: '123456cat',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { maxAge: 60000 }
-}))
+app.use(
+  session({
+    secret: '123456cat',
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // routes

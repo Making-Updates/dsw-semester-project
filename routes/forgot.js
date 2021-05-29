@@ -21,11 +21,12 @@ router.post('/', function (req, res) {
     //initiate the user email
     var emailAddress = req.body.email;
     //check if it exists in the DB
-    var sql = 'SELECT * FROM logins WHERE email =?';
+    var sql = 'SELECT * FROM user_login WHERE email =?';
     db.query(sql, [emailAddress], function (err, data, fields) {
         if (err) throw err
         if (data.length > 0) {
             //redirect the user to the new password input field in the route reset password
+            req.session.forgotEmail = emailAddress;
             res.redirect('/reset')
         } else {
             res.render('forgot', { alertMsg: "Invalid email" })

@@ -56,7 +56,7 @@ CREATE TABLE `homeless_shelter` (
   `id` int(11) NOT NULL,
   `longitude` varchar(100) NOT NULL,
   `latitude` varchar(100) NOT NULL,
-  `name` int(100) NOT NULL
+  `name` varchar(255) NOT NULL
 );
 
 -- Add Primary Key To Homeless People Table --

@@ -35,6 +35,8 @@ All the commands used can be found in `create_database.sql`
 
 After the database and all its tables have been created you are ready to start using the website.
 
+To make life easier we've included a insert_mock_data.sql file to insert mock data to get you up and running quicker.
+
 Run the following command to start the website
 `npm start`
 

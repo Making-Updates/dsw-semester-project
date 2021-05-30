@@ -35,6 +35,8 @@ All the commands used can be found in `create_database.sql`
 
 After the database and all its tables have been created you are ready to start using the website.
 
+To make life easier we've included a `insert_mock_data.sql` file to insert mock data to get you up and running quicker.
+
 Run the following command to start the website
 `npm start`
 
@@ -88,15 +90,93 @@ will be a stepping stone to helping people live better lives.
 
 ## Explanation of our Database and UML Diagram
 
-Fill in
+Our database contains the following tables:
+
+ADMINS
+
+-   This table contains administrators login information only, which will be used to access the website and the data entered by the user.
+
+LOGIN
+
+-   This is where we will be storing the users information i.e. E-mail and Password columns which gives the user access to go through the website and provide information needed then it is safely stored in the database.
+
+HOMELESS PEOPLE
+
+-   This is where the location data (longitude, latitude) as well as the count of the homeless people will be stored. This information will be automatically added when a user completes the form on the map page.
+
+HOMELESS SHELTER
+
+-   This is where the location data (longitude, latitude) as well as the name of the homeless shelter will be stored. This information will be automatically added when a user completes the form on the map page.
 
 ## Screen dumps of the website
 
-Fill in
+Home Page
+![Home Page](docs/screen-dumps/index.ejs.png)
+
+Donate Page
+![Donate Page](docs/screen-dumps/donate.ejs.png)
+
+Info Page
+![Info Page](docs/screen-dumps/info.ejs.png)
+
+Map Page
+![Map Page](docs/screen-dumps/map.ejs.png)
+
+Admin Page
+![Admin Page](docs/screen-dumps/admin.ejs.png)
+
+Error Page
+![Error Page](docs/screen-dumps/error-page.png)
+
+Admin Login
+![Admin Login](docs/screen-dumps/admin-login.ejs.png)
+
+User Login
+![User Login](docs/screen-dumps/login.ejs.png)
+
+User Register
+![User Register](docs/screen-dumps/register.ejs.png)
+
+User Forgot Password
+![User Forgot Password](docs/screen-dumps/forgot-password.ejs.png)
+
+User Reset Password
+![User Reset Password](docs/screen-dumps/reset.ejs.png)
 
 ## Mockups
 
-Fill in
+Home Page
+![Home Page](docs/mockups/home-page.png)
+
+Donate Page
+![Donate Page](docs/mockups/donate-page.png)
+
+Info Page
+![Info Page](docs/mockups/info-page.png)
+
+Map Page
+![Map Page](docs/mockups/map-page.png)
+
+Admin Page
+![Admin Page](docs/mockups/admin-page.png)
+
+Error Page
+![Error Page](docs/mockups/Error-Page.png)
+
+Admin Login
+![Admin Login](docs/mockups/Admin-Login-Page.png)
+
+User Login
+![User Login](docs/mockups/Login-Page.png)
+
+User Register
+![User Register](docs/mockups/Register-Page.png)
+
+User Forgot Password
+![User Forgot Password](docs/mockups/Forgot-Page.png)
+
+User Reset Password
+![User Reset Password](docs/mockups/Reset-Page.png)
 
 ## Screen Flows
 

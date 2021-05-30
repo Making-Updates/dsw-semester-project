@@ -3,8 +3,8 @@ INSERT INTO
     `admin_login` (`email`, `password`)
 VALUES
     ('admin', 'adminpass'),
-    ('admin2', 'adminpass2') 
-    
+    ('admin2', 'adminpass2');
+
 -- Insert data into user login --
 INSERT INTO
     `user_login` (`email`, `password`, `confirm_password`)
@@ -14,8 +14,8 @@ VALUES
         'testing@gmail.com',
         'testingpass',
         'testingpass'
-    ) 
-    
+    );
+
 -- Insert data into homeless people locations --
 INSERT INTO
     `homeless_people`(`longitude`, `latitude`, `count`)
@@ -26,8 +26,8 @@ VALUES
         '28.009423971088836',
         '-26.195288957320923',
         '20'
-    ) 
-    
+    );
+
 -- Insert data into homeless shelter locations --
 INSERT INTO
     `homeless_shelter`(`longitude`, `latitude`, `name`)
@@ -42,4 +42,4 @@ VALUES
         '28.016762494953586',
         '-26.192824969345317',
         'testshelter'
-    )
+    );

@@ -104,6 +104,8 @@ will be a stepping stone to helping people live better lives.
 
 ## Explanation of our Database and UML Diagram
 
+![UML Diagram](docs/uml-diagram.png)
+
 Our database contains the following tables:
 
 ADMINS

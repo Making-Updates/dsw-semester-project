@@ -106,6 +106,8 @@ will be a stepping stone to helping people live better lives.
 
 Our database contains the following tables:
 
+![UML Diagram](docs/uml-diagram.png)
+
 ADMINS
 
 -   This table contains administrators login information only, which will be used to access the website and the data entered by the user.

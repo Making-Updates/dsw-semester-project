@@ -18,6 +18,20 @@ Bonginkosi Nhantumbo - 217040604 - bonginkosi.li73@gmail.com
 
 Blessing Leso - 219089394 - blessingitlotlengleso@gmail.com
 
+# Group Member Tasks
+
+Tiiso Senosha - Backend: Admin Login, Forgot Password, Login and Register. Frontend: Index View and Documentation
+
+Lesego Temane - Backend: Database Creation. Frontend: Index View and Documentation
+
+Waaiez Kinnear - Backend: Map Login and Admin Logic. Frontend: Index, Map and Admin Views and Documentation
+
+Alexis Makgeru - Backend: Database Creation. Frontend: Index View and Documentation
+
+Bonginkosi Nhantumbo - Frontend: Index, Error, Forgot Password, Login and Register Views and Documentation
+
+Blessing Leso - Frontend: Index, Donate and Information Views and Documentation
+
 # How to install
 
 First you need NodeJS and MySQL installed.
@@ -232,4 +246,4 @@ A website will be developed where users can log in and submit data regarding the
 
 ## Solution Design
 
-Fill in
+![Solution Design](docs/solution-design.jpeg)

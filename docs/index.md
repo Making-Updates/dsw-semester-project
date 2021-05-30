@@ -145,38 +145,27 @@ User Reset Password
 
 ## Mockups
 
-Home Page
-![Home Page](docs/mockups/home-page.png)
+![Home Page](mockups/home-page.png)
 
-Donate Page
-![Donate Page](docs/mockups/donate-page.png)
+![Donate Page](mockups/donate-page.png)
 
-Info Page
-![Info Page](docs/mockups/info-page.png)
+![Info Page](mockups/info-page.png)
 
-Map Page
-![Map Page](docs/mockups/map-page.png)
+![Map Page](mockups/map-page.png)
 
-Admin Page
-![Admin Page](docs/mockups/admin-page.png)
+![Admin Page](mockups/admin-page.png)
 
-Error Page
-![Error Page](docs/mockups/Error-Page.png)
+![Error Page](mockups/Error-Page.png)
 
-Admin Login
-![Admin Login](docs/mockups/Admin-Login-Page.png)
+![Admin Login](mockups/Admin-Login-Page.png)
 
-User Login
-![User Login](docs/mockups/Login-Page.png)
+![User Login](mockups/Login-Page.png)
 
-User Register
-![User Register](docs/mockups/Register-Page.png)
+![User Register](mockups/Register-Page.png)
 
-User Forgot Password
-![User Forgot Password](docs/mockups/Forgot-Page.png)
+![User Forgot Password](mockups/Forgot-Page.png)
 
-User Reset Password
-![User Reset Password](docs/mockups/Reset-Page.png)
+![User Reset Password](mockups/Reset-Page.png)
 
 ## Screen Flows
 

@@ -43,7 +43,28 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container body-container">
+
+	<div>
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-md-8 card">
+                        <div class="card-body">
+                                    <h1 class="card-title">Error</h5>
+										<h2>
+											<%= message %>
+										</h2>
+                                        <h2>
+											<%= error.status %>
+										</h2>
+										<pre><%= error.stack %></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- <div class="container body-container">
 		<div class="card">
 			<h1>ERROR</h1>
 			<h2>
@@ -54,7 +75,7 @@
 			</h2>
 			<pre><%= error.stack %></pre>
 		</div>
-	</div>
+	</div> -->
 </body>
 
 </html>

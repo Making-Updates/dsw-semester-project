@@ -12,19 +12,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <% if (alertMsg !='' ) { %>
-                <p class="alert-error">
-                    <%= alertMsg %>
-                </p>
-                <% } %>
-                    <h3>Reset Password</h3>
-                    <form method="post" action="/reset">
-                        <input placeholder="Enter new Password" type="password" name="password">
-                        <input placeholder="Confirm new Password" type="password" name="confirm_password">
-                        <input class="reset_button" type="submit" value="Reset my password">
-                    </form>
+    <div>
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-md-8 card">
+                        <div class="card-body">
+                            <% if (alertMsg !='' ) { %>
+                                <p class="alert-error">
+                                    <%= alertMsg %>
+                                </p>
+                                <% } %>
+                                    <h3 class="card-title">Reset Password</h5>
+                                        <form method="post" action="/reset">
+                                            <input placeholder="Enter new Password" type="password" name="password"
+                                                required autofocus>
+                                            <input placeholder="Confirm new Password" type="password"
+                                                name="confirm_password" required>
+                                            <input class="reset_button" type="submit" value="Reset my password">
+                                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

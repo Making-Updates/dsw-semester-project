@@ -12,24 +12,39 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <% if (alertMsg !='' ) { %>
-                <p class="alert-error">
-                    <%= alertMsg %>
-                </p>
-                <% } %>
-                    <h3>User Registration</h3>
-                    <div class="img_container"><img src="/images/login-avi.png" alt="Login AVI" />
+    <div>
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-md-8 card">
+                        <div class="card-body">
+                            <% if (alertMsg !='' ) { %>
+                                <p class="alert-error">
+                                    <%= alertMsg %>
+                                </p>
+                                <% } %>
+                                    <h3 class="card-title">User Registration</h5>
+                                        <div class="img_container"><img src="/images/login-avi.png" alt="AVI" />
+                                        </div>
+                                        <form method="post" action="/register">
+                                            <div class="form-outline">
+                                                <input type="email" placeholder="Email address" name="email" required
+                                                    autofocus>
+                                            </div>
+
+                                            <input placeholder="Password" type="password" name="password" required>
+                                            <input placeholder="Confirm Password" type="password"
+                                                name="confirm_password" required>
+                                            <input class="register_button" type="submit" value="Register">
+                                        </form>
+                                        <h6><a href="/register">Register</a></h6>
+                                        <h6><a href="/forgot">Forgot Password</a></h6>
+                        </div>
                     </div>
-                    <form method="post" action="/register">
-                        <input placeholder="Email Address" type="text" name="email">
-                        <input placeholder="Password" type="password" name="password">
-                        <input placeholder="Confirm Password" type="password" name="confirm_password">
-                        <input class="register_button" type="submit" value="Register">
-                    </form>
-                    <h6><a href="/login">Login</a></h6>
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 
 </html>
